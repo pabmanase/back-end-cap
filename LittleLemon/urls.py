@@ -27,4 +27,7 @@ urlpatterns = [
     path('restaurant/', include('restaurant.urls')),
     #http://localhost:8000/restaurant/booking-router/tables/
     path('restaurant/booking-router/', include(router.urls)),
+    #djoser
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
 ]
