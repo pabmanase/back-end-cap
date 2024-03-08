@@ -6,7 +6,7 @@ class MenuSerializer(serializers.ModelSerializer):
         model = Menu
         fields = '__all__'
         #can define this explicitly with:
-        #fields = ['title', 'price', 'inventory']
+        #fields = ['id', 'title', 'price', 'inventory']
         #useful when you need to add something to the fields/renaming
 
 class BookingSerializer(serializers.ModelSerializer):

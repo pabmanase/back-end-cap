@@ -33,7 +33,7 @@ class bookingView(APIView):
             return Response({"message":"error"}, status.HTTP_400_BAD_REQUEST)
         
 class MenuItemView(generics.ListCreateAPIView):
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
 
@@ -44,7 +44,7 @@ class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView
 class BookingViewSet(ModelViewSet):
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
 
 @api_view()
 @permission_classes([IsAuthenticated])
