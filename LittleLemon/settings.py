@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'reservation',
     'restaurant',
     'rest_framework',
     'rest_framework.authtoken',
@@ -90,8 +89,9 @@ DATABASES = {
         #'NAME': BASE_DIR / 'db.sqlite3',
         'NAME': 'littlelemon_cap',
         'HOST': 'localhost', #or host name i.e 127.0.0.1
-        'USER': 'root', #don't use root in production
-        'PASSWORD': 'Luigi24',
+        #enter your mysql credentials
+        'USER': 'root', 
+        'PASSWORD': 'password', 
         'PORT': '3306'
     }
 }
