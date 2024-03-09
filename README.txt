@@ -16,3 +16,6 @@ API Paths to test:
 Important notes:
 - Authentication requirements are commented out for testing as seen in restaurant/views.py.
 - Edit your own MySQL credentials in DATABASES in LittleLemon/settings.py.
+- Migrate models to test the API.:
+  python manage.py makemigrations
+  python manage.py migrate
